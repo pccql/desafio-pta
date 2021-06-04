@@ -8,22 +8,23 @@ header{
     background: #FF99C4;
     display: flex;
     align-items: center;
-    height: 15vh;
+    height: 12vh;
     justify-content: space-between;
     padding-left: 30px
 }
 
 .logo img{
-    width: 193px;
-    height: 74px;
+    width: 150px;
+    padding-top: 15px;
+    
 }
 
 .search{
     position: relative;
-    padding-right: 50px;
-    padding-top: 5px;
-    width: 408px;
-    height: 48px;
+    padding-right: 80px;
+    padding-top: 15px;
+    width: 390px;
+    
 }
 
 .box{
@@ -45,7 +46,65 @@ header{
 
 .transition{
     width: 100vw;
-    height: 10vh;
+    height: 3vh;
     background-image: linear-gradient(#FF99C4, white);
     padding: 15px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    width: 100vw;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding-left: 6vw;
+   
+}
+
+.maior_picole, .menor_picole{
+    background: #FFFEFE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 8px 40px 8px 40px;
+    text-align: center;
+}
+
+.sub-1, .sub-2{
+    display: grid;
+    justify-self: stretch;
+}
+
+.menor_picole img{
+    width: 120px;
+    padding: 0 15px 0 15px;
+}
+
+.maior_picole img{
+    padding: 10px 40px 0 40px;
+    width: 200px;
+}
+
+.maior_picole p, h3,h4{
+    margin: 4px;
+}
+
+.maior_picole h3, h4{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 20px;
+}
+
+.maior_picole p{
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8A8585;
 }
