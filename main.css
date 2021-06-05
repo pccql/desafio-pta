@@ -2,9 +2,14 @@ html, body, h2{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Montserrat;
+}
+
+.container{
+    overflow: hidden;
 }
 header{
-    width: 100vw;
+    width: 99vw;
     background: #FF99C4;
     display: flex;
     align-items: center;
@@ -38,28 +43,31 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 4;
-    font-family: Montserrat;
     font-weight: 300;
     font-size: 17px;
     color: #8D8D8D;
 }
 
+
+
 .transition{
-    width: 100vw;
-    height: 3vh;
+    width: 99vw;
+    height: 5vh;
     background-image: linear-gradient(#FF99C4, white);
     padding: 15px;
 }
 
 .main{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
-    width: 100vw;
-    grid-column-start: 2;
-    grid-column-end: 5;
-    padding-left: 6vw;
-   
+    grid-template-columns: 0.25fr 0.1fr 0.25fr 0.1fr;
+    width: 80vw;
+    padding: 1vh 0 .5vh 0;
+    align-items: center;
+    justify-content: space-around;
+    height: 55vh;
+    margin: auto;
 }
+
 
 .maior_picole, .menor_picole{
     background: #FFFEFE;
@@ -69,42 +77,86 @@ header{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    margin: 8px 40px 8px 40px;
+    
     text-align: center;
 }
 
 .sub-1, .sub-2{
-    display: grid;
-    justify-self: stretch;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .menor_picole img{
-    width: 120px;
-    padding: 0 15px 0 15px;
+    width: 8vw;
+    padding: 1.5vw;
 }
 
 .maior_picole img{
     padding: 10px 40px 0 40px;
-    width: 200px;
+    width: 9.8vw;
 }
 
-.maior_picole p, h3,h4{
-    margin: 4px;
+.maior_picole p, h2{
+    margin: 0;
+    padding: 0;
 }
 
-.maior_picole h3, h4{
-    font-family: Montserrat;
+.maior_picole h2{
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
     color: #000000;
-    padding-bottom: 20px;
+    padding: 10px 0 10px 0;
 }
 
 .maior_picole p{
-    font-family: Montserrat;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
     color: #8A8585;
+    padding: 0 5px 0 4px;
+}
+
+footer{
+    background: #F49B8C8F;
+    width: 99vw;
+    height: 30vh;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 3vw 0 0;
+}
+
+
+.first-line, .second-line, .third-line{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 16px;
+    color: #404040;
+    
+}
+.right-side img{
+    margin: 1vw;
+}
+
+.middle-side h3{
+    padding-top: 17vh;
+    
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+}
+
+.left-side img{
+    width: 10vw;
+}
+
+.left-side{
+    height: 60%;
 }
