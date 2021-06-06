@@ -225,18 +225,19 @@ footer{
     }
 
     .main{
-        grid-template-columns: 0.25fr 0.25fr;
         grid-template-rows: 50% 50%;
         grid-row-gap: 2vh;
-        grid-column-gap: 2vh;
-        height: 65vh;
+        height: 68vh;
+        margin: auto;
+        grid-template-columns: unset;
+        justify-content: space-evenly;
     }
 
    
     .maior_picole img{
-        width: 15vh;
-        padding-left: 7vw;
-        padding-right: 7vw;
+        width: 18vh;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .maior_picole p{
@@ -251,10 +252,17 @@ footer{
         font-weight: 600;
     }
 
+
     .menor_picole img{
         width: 50px;
     }
+    .menor_picole{
+        width: 80px;
+    }
 
+    .sub-1{
+        align-items: flex-end;
+    }
     .chica-bon{
         grid-column: 2;
     }
