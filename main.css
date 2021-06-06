@@ -64,7 +64,7 @@ header{
     padding: 1vh 0 .5vh 0;
     align-items: center;
     justify-content: space-around;
-    height: 55vh;
+    height: 50vh;
     margin: auto;
 }
 
@@ -77,7 +77,7 @@ header{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    
+    height: 100%;
     text-align: center;
 }
 
@@ -90,7 +90,7 @@ header{
 
 .menor_picole img{
     width: 8vw;
-    padding: 1.5vw;
+    padding: 1.25vw;
 }
 
 .maior_picole img{
@@ -119,6 +119,14 @@ header{
     padding: 0 5px 0 4px;
 }
 
+.top{
+    margin-bottom: 1vh;
+}
+
+.bottom{
+    margin-top: 1vh;
+}
+
 footer{
     background: #F49B8C8F;
     width: 99vw;
@@ -135,11 +143,15 @@ footer{
     display: flex;
     justify-content: left;
     align-items: center;
-    font-family: Montserrat;
+    padding-left: 15vh;
     font-weight: 500;
     font-size: 16px;
     color: #404040;
     
+}
+
+.right-side, .middle-side, .left-side{
+    width: 33vw;
 }
 .right-side img{
     margin: 1vw;
@@ -147,16 +159,108 @@ footer{
 
 .middle-side h3{
     padding-top: 17vh;
-    
     font-weight: 500;
     font-size: 20px;
     color: #000000;
 }
-
+.middle-side{
+    display: flex;
+    justify-content: space-around;
+}
 .left-side img{
     width: 10vw;
 }
 
 .left-side{
-    height: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 20vh;
+}
+
+@media (max-width: 1024px) and (min-width: 200px) {
+    .logo img{
+        width: 120px;
+    }
+
+    .first-line, .second-line, .third-line{
+        padding-left: 0;
+        font-size: 12px;
+        color:  #404040;
+        font-weight: 600;
+        line-height: 15px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 25vh;
+        padding-top: 3vh;
+        
+    }
+
+    .middle-side h3{
+        padding-top: 1vh;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .middle-side{
+        width: 70vw;
+    }
+
+    .left-side {
+        flex: 0;
+        display: none;
+    }
+
+    .right-side{
+        margin: auto;
+        width: auto;
+        
+    }
+    .right-side img{
+        margin-right: 20px;
+    }
+
+    .main{
+        grid-template-columns: 0.25fr 0.25fr;
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 2vh;
+        grid-column-gap: 2vh;
+        height: 65vh;
+    }
+
+   
+    .maior_picole img{
+        width: 15vh;
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+
+    .maior_picole p{
+        font-size: 10px;
+        padding: 0;
+        width: 20vh;
+        line-height: 1.2;
+    }
+    .maior_picole h2{
+        font-size: 12px;
+        line-height: 0;
+        font-weight: 600;
+    }
+
+    .menor_picole img{
+        width: 50px;
+    }
+
+    .chica-bon{
+        grid-column: 2;
+    }
+    .sub-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+
 }
