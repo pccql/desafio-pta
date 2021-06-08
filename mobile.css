@@ -1,0 +1,120 @@
+@media (max-width: 1024px) and (min-width: 200px) {
+    .logo img{
+        align-items: center;
+        width: 18vh;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .transition{
+        padding-top:0
+    }
+    .first-line, .second-line, .third-line{
+        padding-left: 0;
+        font-size: 12px;
+        color:  #404040;
+        font-weight: 600;
+        line-height: 15px;
+    }
+    footer{
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 30vh;
+        padding-top: 3vh; 
+    }
+    .middle-side h3{
+        padding-top: 1vh;
+        font-size: 13px;
+        text-align: center;
+        font-weight: 600;
+    }
+    .middle-side{
+        width: 70vw;
+        padding-bottom: 4vh;
+    }
+    .left-side {
+        flex: 0;
+        display: none;
+    }
+    .right-side{
+        margin: auto;
+        width: auto;
+    }
+    .right-side img{
+        margin-right: 20px;
+    }
+    .main{
+        grid-template-rows: 50% 50%;
+        grid-row-gap: 2vw;
+        height: 75vh;
+        margin: auto;
+        grid-template-columns: unset;
+        justify-content: space-evenly;
+    }
+    .maior_picole img{
+        width: 18vh;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .maior_picole p{
+        font-size: 10px;
+        padding: 0;
+        width: 20vh;
+        line-height: 1.2;
+    }
+    .maior_picole h2{
+        font-size: 12px;
+        line-height: 0;
+        font-weight: 600;
+    }
+    .menor_picole img{
+        width: 80px;
+    }
+    .menor_picole{
+        width: 110px;
+    }
+    .sub-1{
+        align-items: flex-end;
+    }
+    .chica-bon{
+        grid-column: 2;
+    }
+    .sub-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .box, .box-content p{
+        flex: 0;
+        display: none;
+    }
+    .search{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .box-2{
+        display: flex;
+        grid-column: 3;
+        grid-row: 2;
+        width: 55px;
+        display: flex;
+        position: absolute;
+        margin: 0;
+        
+    }
+    .box-content{
+        position: absolute;
+        grid-column: 3;
+        grid-row: 2;
+        margin: 0;
+        padding: 8px 0 0 0;
+    }
+    .lupa{
+        padding-left: 15px;
+    }
+
+}
