@@ -9,6 +9,21 @@
         justify-content: space-around;
     }
 
+    .search{
+        width: 36px;
+        height: 36px;
+        padding: 0;
+    }
+
+    input{
+        display: none;
+    }
+
+    .lupa{
+        margin-right: 0;
+        margin-left: 5px;
+    }
+
     .transition{
         padding-top:0
     }
@@ -86,35 +101,4 @@
         grid-column: 1;
         grid-row: 2;
     }
-    .box, .box-content p{
-        flex: 0;
-        display: none;
-    }
-    .search{
-        height: 100%;
-        display: grid;
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 33% 33% 33%;
-    }
-    .box-2{
-        display: flex;
-        grid-column: 3;
-        grid-row: 2;
-        width: 55px;
-        display: flex;
-        position: absolute;
-        margin: 0;
-        
-    }
-    .box-content{
-        position: absolute;
-        grid-column: 3;
-        grid-row: 2;
-        margin: 0;
-        padding: 8px 0 0 0;
-    }
-    .lupa{
-        padding-left: 15px;
-    }
-
 }
