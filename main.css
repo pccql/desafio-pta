@@ -173,3 +173,17 @@ footer{
     justify-content: space-between;
     padding: 0 10px 0 10px;
 }
+
+/* trocar cor apertando butões */
+.blue-header{
+    background: linear-gradient(180deg, rgba(81, 111, 251, 0.8) 44.17%, rgba(255, 255, 255, 0.12) 100%);
+}
+.blue-footer{
+    background: rgba(81, 111, 251, 0.56);
+}
+.orange-header{
+    background: linear-gradient(180deg, rgba(240, 94, 43, 0.8) 44.17%, rgba(255, 255, 255, 0.12) 100%);
+}
+.orange-footer{
+    background: rgba(240, 94, 43, 0.56);
+}
