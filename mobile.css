@@ -20,6 +20,7 @@
         height: 40px;
         padding: 0;
         order: -1;
+        margin: .1vh;
     }
 
     .change-colour-buttons{
@@ -115,7 +116,6 @@
     }
 
     .expanded-search{
-        margin: 0;
         height: 38px;
     }
 
