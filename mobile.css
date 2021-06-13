@@ -1,7 +1,7 @@
 @media (max-width: 1024px) and (min-width: 200px) {
     .logo img{
         align-items: center;
-        width: 18vh;
+        width: 16vh;
     }
     .logo{
         display: flex;
@@ -112,5 +112,20 @@
     .sub-2{
         grid-column: 1;
         grid-row: 2;
+    }
+
+    .expanded-search{
+        margin: 0;
+        height: 38px;
+    }
+
+    .show-input{
+        display: flex;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    .lupa-expanded{
+        margin-right: 10px !important;
     }
 }
