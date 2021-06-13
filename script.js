@@ -36,13 +36,13 @@ pinkButton.addEventListener('click', clickPinkButton);
 
 
 // search animation
-let width = 0;
+let width = 40;
 
 const clickSearchBar = () => {
-    if (width === 0){
+    if (width === 40){
         let id = null;
         clearInterval(id);
-        id = setInterval(frame, 5);
+        id = setInterval(frame, 6);
         function frame() {
             if (width === 200) {
             clearInterval(id);
@@ -51,11 +51,10 @@ const clickSearchBar = () => {
             searchBar.style.width = width + 'px';
             }
         }
+        searchBar.classList.add('expanded-search')
+        document.querySelector('input').classList.add('show-input')
+        document.querySelector('.lupa').classList.add('lupa-expanded')
     }
-
-    searchBar.classList.add('expanded-search')
-    document.querySelector('input').classList.add('show-input')
-    document.querySelector('.lupa').classList.add('lupa-expanded')
 }
 
 const searchBar = document.querySelector('.search');
