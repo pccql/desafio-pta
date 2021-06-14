@@ -39,24 +39,26 @@ pinkButton.addEventListener('click', clickPinkButton);
 let width = 40;
 
 const clickSearchBar = () => {
-    if (width === 40){
+    if (width === 40 && window.innerWidth <= 1024){
         let id = null;
         clearInterval(id);
-        id = setInterval(frame, 6);
+        width = 4;
+        id = setInterval(frame, 5);
         function frame() {
-            if (width === 200) {
+            if (width === 43) {
             clearInterval(id);
             } else {
             width++;
-            searchBar.style.width = width + 'px';
+            searchBar.style.width = width + 'vw';
             }
         }
         searchBar.classList.add('expanded-search')
-        document.querySelector('input').classList.add('show-input')
+        input.classList.add('show-input')
+        input.removeAttribute('placeholder')
         document.querySelector('.lupa').classList.add('lupa-expanded')
     }
 }
-
+const input = document.querySelector('input')
 const searchBar = document.querySelector('.search');
 
 searchBar.addEventListener('click', clickSearchBar);

@@ -116,16 +116,22 @@
     }
 
     .expanded-search{
-        height: 38px;
+        height: 5.2vh;
+        border-radius: 2.46vh;
+        max-width: 308px !important;
     }
 
     .show-input{
         display: flex;
         padding: 0;
         margin-left: 15px;
+        font-size: 4vw;
     }
 
     .lupa-expanded{
-        margin-right: 10px !important;
+        margin-right: 1vh !important;
+        position: absolute;
+        right: 5.8vw;
+        z-index: 20;
     }
 }
