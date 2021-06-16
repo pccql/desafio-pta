@@ -13,7 +13,7 @@ header{
     background: #FF99C4;
     display: flex;
     height: 21vh;
-    background-image: linear-gradient(#FF99C4 55%, white 100%);
+    background-image: linear-gradient(#FF99C4 44.17%, white 100%);
     margin-bottom: 1vh;
 }
 
@@ -88,6 +88,10 @@ input{
 .menor_picole img{
     width: 8vw;
     padding: 1.25vw;
+}
+
+.menor_picole{
+    max-height: 50%;
 }
 .maior_picole img{
     padding: 10px 40px 0 40px;
@@ -187,4 +191,12 @@ footer{
 }
 .orange-footer{
     background: rgba(240, 94, 43, 0.56);
+}
+
+.invisible{
+    display: none;
+}
+
+.show{
+    display: flex;
 }
